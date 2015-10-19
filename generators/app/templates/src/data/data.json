@@ -1,0 +1,22 @@
+[{
+	"name": "RequireJS",
+	"url": "http://requirejs.org/"
+}, {
+	"name": "Lo-dash",
+	"url": "https://lodash.com/"
+}, {
+	"name": "Jquery",
+	"url": "https://jquery.com/"
+}, {
+	"name": "Bootstrap",
+	"url": "http://getbootstrap.com/"
+}, {
+	"name": "Sass",
+	"url": "http://sass-lang.com/"
+}, {
+	"name": "Jade",
+	"url": "http://jade-lang.com/"
+}, {
+	"name": "Grunt",
+	"url": "http://gruntjs.com/"
+}]

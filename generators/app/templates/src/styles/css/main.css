@@ -1,0 +1,19 @@
+body {
+  background: AliceBlue;
+  text-align: center;
+  padding: 20px; }
+
+footer {
+  font-size: 0.8em; }
+
+header img.logo {
+  width: 200px; }
+
+section.content {
+  margin: 20px 0; }
+  section.content header {
+    margin-bottom: 20px; }
+  section.content .buttons a {
+    margin: 5px; }
+
+/*# sourceMappingURL=main.css.map */

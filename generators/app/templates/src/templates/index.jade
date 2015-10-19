@@ -1,0 +1,13 @@
+header#header
+
+section(class='content')
+
+    header
+        img(class='logo', src='images/backbone.png')
+
+    .buttons.row
+        <% _.forEach(libs, function(lib) { %>
+        <%=  '<a href="' + lib.url + '" target="_black" data-bypass="data-bypass" class="btn btn-default btn-sm">' + lib.name + '</a>'  %>
+        <% }); %>
+
+footer#footer
