@@ -1,4 +1,5 @@
-# generator-starling
+# generator-base-backbone
+
 [![Build Status](https://secure.travis-ci.org/zguillez/generator-base-backbone.png?branch=master)](https://travis-ci.org/zguillez/generator-base-backbone) [![Code Climate](https://codeclimate.com/github/zguillez/generator-base-backbone/badges/gpa.svg)](https://codeclimate.com/github/zguillez/generator-base-backbone)
 
 > [Zguillez](https://zguillez.io) | Guillermo de la Iglesia
@@ -41,6 +42,14 @@ bower update
 For update npm
 
 	sudo npm install npm -g
+
+### Bower
+
+	npm install -g bower
+
+### Sass
+
+	sudo gem install sass
 
 ## Usage
 
