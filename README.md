@@ -53,3 +53,73 @@ For update npm
 
 ## Usage
 
+Develop code on folder **/src**
+
+	/src
+		/data
+		/images
+		/scripts
+			/collections
+			/views
+		/styles
+		/templates
+		
+### Compile code
+
+Use grunt task to compile code and deploy webapp
+
+	grunt serve
+	
+THis will launch server on port 9000
+
+	http://localhost:9000/
+	
+Distribute code is compileded on forder **/dist**
+
+	/dist
+		/css
+		/data
+		/images
+		/js
+		/lib
+		/templates
+		
+### Styling
+
+Sass files (*.sass, *.scss) must be located on **/src/styles** folder root.
+
+* Grunt task **sass.js** will process the files into CSS files to folder **/src/styles/css**.
+* Grunt task **copy.js** will copy all CSS files into **/src/styles/css** to folder **/dist/css** for ditribution.
+* You can also create and edit CSS files in **/src/styles/css**.
+
+### Templating
+
+The NodeJS template engine JADE is implemented. Jade files (*.jade) must be located on **/templates** folder root.
+
+* Grunt task **jade** will process the files into HTML files to folder **/templates/html**.
+* Grunt task **copy.js** will copy all CSS files into **/templates/html** to folder **/dist/templates** for ditribution.
+* You can also create and edit HTML templates files in **/templates/html**.
+
+
+You can use combined Jade and Lodash for templating:
+
+	//templates/index.jade
+	
+	header#header
+	section(class='content')
+	header
+		img(class='logo', src='images/backbone.png')
+	.buttons.row
+		<% _.forEach(libs, function(lib) { %>
+		<%=  '<a href="' + lib.url + '" target="_black" data-bypass="data-bypass" class="btn btn-default btn-sm">' + lib.name + '</a>'  %>
+		<% }); %>
+	footer#footer
+	
+**Documentation:**
+
+* [http://jade-lang.com/](http://jade-lang.com/)
+* [https://lodash.com/](https://lodash.com/)
+
+
+
+
