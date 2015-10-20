@@ -48,6 +48,12 @@ For update npm
 ### [Sass](http://sass-lang.com/)
 
 	sudo gem install sass
+	
+**Documentation:**
+
+* [https://nodejs.org/](https://nodejs.org/)
+* [http://bower.io/](http://bower.io/)
+* [http://sass-lang.com/](http://sass-lang.com/)
 
 # Usage
 
