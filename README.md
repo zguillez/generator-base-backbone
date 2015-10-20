@@ -86,7 +86,7 @@ Distribute code is compileded on forder **/dist**
 		
 ### Styling
 
-Sass files (*.sass, *.scss) must be located on **/src/styles** folder root.
+Sass files (\*.sass, \*.scss) must be located on **/src/styles** folder root.
 
 * Grunt task **sass.js** will process the files into CSS files to folder **/src/styles/css**.
 * Grunt task **copy.js** will copy all CSS files into **/src/styles/css** to folder **/dist/css** for ditribution.
@@ -94,9 +94,9 @@ Sass files (*.sass, *.scss) must be located on **/src/styles** folder root.
 
 ### Templating
 
-The NodeJS template engine JADE is implemented. Jade files (*.jade) must be located on **/templates** folder root.
+The NodeJS template engine JADE is implemented. Jade files (\*.jade) must be located on **/templates** folder root.
 
-* Grunt task **jade** will process the files into HTML files to folder **/templates/html**.
+* Grunt task **jade.js** will process the files into HTML files to folder **/templates/html**.
 * Grunt task **copy.js** will copy all CSS files into **/templates/html** to folder **/dist/templates** for ditribution.
 * You can also create and edit HTML templates files in **/templates/html**.
 
