@@ -8,7 +8,7 @@
 
 ![](http://zguillez.github.io/img/backbone.png)
 
-## Getting Started
+# Getting Started
 
 ### Install Yeoman
 
@@ -35,23 +35,21 @@ bower update
 
 ## Requeriments
 
-### NodeJS
-
-* [https://nodejs.org/](https://nodejs.org/)
+### [NodeJS](https://nodejs.org/)
 
 For update npm
 
 	sudo npm install npm -g
 
-### Bower
+### [Bower](http://bower.io/)
 
 	npm install -g bower
 
-### Sass
+### [Sass](http://sass-lang.com/)
 
 	sudo gem install sass
 
-## Usage
+# Usage
 
 Develop code on folder **/src**
 
