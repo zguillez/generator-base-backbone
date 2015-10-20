@@ -5,7 +5,7 @@ define(['jquery', 'underscore', 'backbone', 'views/index'], function($, _, Backb
 			'': 'indexAction',
 			'*params': 'defaultAction'
 		},
-		indexAction: function(params) {
+		indexAction: function() {
 			var indexView = new IndexView();
 			indexView.render();
 		},
