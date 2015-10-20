@@ -1,6 +1,6 @@
-'use strict';
 define(['jquery', 'underscore', 'backbone', 'text!../../templates/index.html', 'views/header', 'views/footer', 'collections/data'],
 	function($, _, Backbone, IndexTemplate, HeaderView, FooterView, DataCollection) {
+		'use strict';
 		var IndexView = Backbone.View.extend({
 			el: $('.container'),
 			header: $('#header'),

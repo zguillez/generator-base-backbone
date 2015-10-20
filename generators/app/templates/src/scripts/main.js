@@ -9,7 +9,10 @@ require.config({
 		bootstrap: '../lib/bootstrap.min'
 	}
 });
-require(['jquery', 'bootstrap']);
-require(['router'], function(Router) {
-	Router.initialize();
+require(['jquery'], function() {
+	require(['bootstrap'], function() {
+		require(['router'], function(Router) {
+			Router.initialize();
+		});
+	});
 });
