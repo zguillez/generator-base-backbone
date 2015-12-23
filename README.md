@@ -1,6 +1,11 @@
 # generator-base-backbone
 
-[![Build Status](https://secure.travis-ci.org/zguillez/generator-base-backbone.png?branch=master)](https://travis-ci.org/zguillez/generator-base-backbone) [![Code Climate](https://codeclimate.com/github/zguillez/generator-base-backbone/badges/gpa.svg)](https://codeclimate.com/github/zguillez/generator-base-backbone)
+[![npm version](https://badge.fury.io/js/generator-base-backbone.svg)](https://badge.fury.io/js/generator-base-backbone)
+[![Code Climate](http://img.shields.io/codeclimate/github/zguillez/generator-base-backbone.svg)](https://codeclimate.com/github/zguillez/generator-base-backbone)
+[![Build Status](http://img.shields.io/travis/zguillez/generator-base-backbone.svg)](https://travis-ci.org/zguillez/generator-base-backbone)
+[![Coverage Status](http://img.shields.io/coveralls/zguillez/generator-base-backbone.svg)](https://coveralls.io/r/zguillez/generator-base-backbone)
+![](https://reposs.herokuapp.com/?path=zguillez/generator-base-backbone)
+[![License](http://img.shields.io/:license-mit-blue.svg)](http://doge.mit-license.org)
 
 > [Zguillez](https://zguillez.io) | Guillermo de la Iglesia
 
