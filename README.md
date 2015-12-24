@@ -1,12 +1,13 @@
 # generator-base-backbone
 
 [![npm version](https://badge.fury.io/js/generator-base-backbone.svg)](https://badge.fury.io/js/generator-base-backbone)
+[![Build Status](http://img.shields.io/travis/zguillez/generator-base-backbone.svg)](https://github.com/zguillez/generator-base-backbone)
 [![Code Climate](http://img.shields.io/codeclimate/github/zguillez/generator-base-backbone.svg)](https://codeclimate.com/github/zguillez/generator-base-backbone)
-[![Build Status](http://img.shields.io/travis/zguillez/generator-base-backbone.svg)](https://travis-ci.org/zguillez/generator-base-backbone)
-[![Coverage Status](http://img.shields.io/coveralls/zguillez/generator-base-backbone.svg)](https://coveralls.io/r/zguillez/generator-base-backbone)
 [![Dependency Status](https://gemnasium.com/zguillez/generator-base-backbone.svg)](https://gemnasium.com/zguillez/generator-base-backbone)
+[![Installs](https://img.shields.io/npm/dt/generator-base-backbone.svg)](https://coveralls.io/r/zguillez/generator-base-backbone)
 ![](https://reposs.herokuapp.com/?path=zguillez/generator-base-backbone)
 [![License](http://img.shields.io/:license-mit-blue.svg)](http://doge.mit-license.org)
+[![Analytics](https://ga-beacon.appspot.com/UA-1125217-30/zguillez/generator-base-backbone?pixel)](https://github.com/igrigorik/ga-beacon)
 
 > [Zguillez](https://zguillez.io) | Guillermo de la Iglesia
 
