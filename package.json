@@ -1,6 +1,6 @@
 {
 	"name": "generator-base-backbone",
-	"version": "1.0.3",
+	"version": "1.0.5",
 	"description": "Backbone.js basic skeleton for webapp development. With RequireJS, Bootstrap, Sass, and templating with Jade and Lodash. Also with JSHint and Grunt.",
 	"license": "MIT",
 	"main": "app/index.js",
@@ -13,24 +13,12 @@
 	"scripts": {
 		"test": "mocha"
 	},
-	"files": [
-		"generators"
-	],
-	"keywords": [
-		"yeoman-generator",
-		"Backbone",
-		"Underscore",
-		"Lodash",
-		"Jade",
-		"Sass",
-		"Bootstrap",
-		"Jquery",
-		"Grunt"
-	],
+	"files": ["generators"],
+	"keywords": ["yeoman-generator", "Backbone", "Underscore", "Lodash", "Jade", "Sass", "Bootstrap", "Jquery", "Grunt"],
 	"dependencies": {
-		"yeoman-generator": "^0.19.0",
-		"chalk": "^1.0.0",
-		"yosay": "^1.0.2"
+		"yeoman-generator": "^0.22.1",
+		"chalk": "^1.1.1",
+		"yosay": "^1.1.0"
 	},
 	"devDependencies": {
 		"mocha": "*"
