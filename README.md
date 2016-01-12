@@ -137,14 +137,16 @@ Contributors are welcome, please fork and send pull requests! If you have any id
 
 # License
 
-©2015 Zguillez.io
+©2016 Zguillez.io
 
 Original code licensed under [MIT](https://en.wikipedia.org/wiki/MIT_License) Open Source projects used within this project retain their original licenses.
 
 # Changelog
+### v1.1.10 (January 12, 2016)
+- Fix yo install version
 
 ### v1.0.0 (October 20, 2015) 
-* Initial Backbone.js skeleton
+Initial Backbone.js skeleton
 
 Features:
 
