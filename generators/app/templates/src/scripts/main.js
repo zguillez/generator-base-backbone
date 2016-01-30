@@ -3,14 +3,14 @@ require.config({
 	paths: {
 		routes: './routes',
 		text: '../lib/text',
-		jquery: '../lib/jquery.min',
-		underscore: '../lib/lodash.min',
-		backbone: '../lib/backbone-min',
-		bootstrap: '../lib/bootstrap.min'
+		jquery: '../lib/jquery',
+		underscore: '../lib/lodash',
+		backbone: '../lib/backbone',
+		bootstrap: '../lib/bootstrap'
 	}
 });
-require(['jquery'], function() {
-	require(['bootstrap'], function() {
+require(['backbone', 'jquery', 'underscore'], function(Backbone, $, _) {
+	require(['bootstrap'], function(Bootstrap) {
 		require(['router'], function(Router) {
 			Router.initialize();
 		});
