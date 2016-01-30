@@ -27,6 +27,9 @@
 To install generator-base-backbone from npm, run:
 
 	npm install -g generator-base-backbone
+	
+	//or:
+	sudo npm install -g generator-base-backbone
 
 Finally, initiate the generator:
 
