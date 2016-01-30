@@ -36,7 +36,7 @@ module.exports = function(grunt) {
 			src: ['*.*'],
 			dest: 'dist/data/',
 			expand: true
-		}
+		},
 		lodash_: {
 			cwd: 'bower_components/lodash/dist',
 			src: 'lodash.js',

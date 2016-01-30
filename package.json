@@ -1,6 +1,6 @@
 {
 	"name": "generator-base-backbone",
-	"version": "1.1.13",
+	"version": "1.1.14",
 	"description": "Backbone.js basic skeleton for webapp development. With RequireJS, Bootstrap, Sass, and templating with Jade and Lodash. Also with JSHint and Grunt.",
 	"license": "MIT",
 	"main": "app/index.js",
@@ -47,6 +47,7 @@
 		"grunt-contrib-sass": "~0.9.2",
 		"grunt-contrib-uglify": "~0.11.0",
 		"grunt-contrib-watch": "^0.6.1",
+		"grunt-merge-copy": "^1.0.0",
 		"grunt-open": "^0.2.3",
 		"grunt-reload": "^0.2.0",
 		"jade": "^1.11.0",

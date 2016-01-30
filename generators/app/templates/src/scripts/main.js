@@ -9,8 +9,8 @@ require.config({
 		bootstrap: '../lib/bootstrap'
 	}
 });
-require(['backbone', 'jquery', 'underscore'], function(Backbone, $, _) {
-	require(['bootstrap'], function(Bootstrap) {
+require(['backbone', 'jquery', 'underscore'], function() {
+	require(['bootstrap'], function() {
 		require(['router'], function(Router) {
 			Router.initialize();
 		});
