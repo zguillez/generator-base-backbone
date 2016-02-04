@@ -14,7 +14,7 @@
 		"requirejs": "~2.1.22",
 		"requirejs-text": "~2.0.14",
 		"jquery": "~2.2.0",
-		"lodash": "~4.1.0",
+		"lodash": "~4.2.1",
 		"backbone": "~1.2.3",
 		"bootstrap": "~3.3.6"
 	},
