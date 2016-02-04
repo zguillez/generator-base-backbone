@@ -1,7 +1,7 @@
 # generator-base-backbone
 
 [![npm version](https://badge.fury.io/js/generator-base-backbone.svg)](https://badge.fury.io/js/generator-base-backbone)
-[![Build Status](http://img.shields.io/travis/zguillez/generator-base-backbone.svg)](https://github.com/zguillez/generator-base-backbone)
+[![Build Status](http://img.shields.io/travis/zguillez/generator-base-backbone.svg)](https://travis-ci.org/zguillez/generator-base-backbone)
 [![Code Climate](http://img.shields.io/codeclimate/github/zguillez/generator-base-backbone.svg)](https://codeclimate.com/github/zguillez/generator-base-backbone)
 [![Dependency Status](https://gemnasium.com/zguillez/generator-base-backbone.svg)](https://gemnasium.com/zguillez/generator-base-backbone)
 [![Installs](https://img.shields.io/npm/dt/generator-base-backbone.svg)](https://coveralls.io/r/zguillez/generator-base-backbone)
@@ -27,6 +27,9 @@
 To install generator-base-backbone from npm, run:
 
 	npm install -g generator-base-backbone
+	
+	//or:
+	sudo npm install -g generator-base-backbone
 
 Finally, initiate the generator:
 
