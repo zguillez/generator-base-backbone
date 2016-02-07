@@ -1,5 +1,5 @@
+'use strict';
 define(['backbone', 'jquery', 'underscore', 'views/index'], function(Backbone, $, _, IndexView) {
-	'use strict';
 	var Router = Backbone.Router.extend({
 		routes: {
 			'': 'indexAction',

@@ -1,6 +1,6 @@
-define(['jquery', 'underscore', 'backbone', 'text!../../templates/index.html', 'views/header', 'views/footer', 'collections/data'],
-	function($, _, Backbone, IndexTemplate, HeaderView, FooterView, DataCollection) {
-		'use strict';
+'use strict';
+define(['backbone', 'jquery', 'underscore', 'text!../../templates/index.html', 'views/header', 'views/footer', 'collections/data'],
+	function(Backbone, $, _, IndexTemplate, HeaderView, FooterView, DataCollection) {
 		var IndexView = Backbone.View.extend({
 			el: $('.container'),
 			header: $('#header'),

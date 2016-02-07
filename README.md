@@ -193,8 +193,10 @@ Contributors are welcome, please fork and send pull requests! If you have any id
 Original code licensed under [MIT](https://en.wikipedia.org/wiki/MIT_License) Open Source projects used within this project retain their original licenses.
 
 # Changelog
-### v1.2.0 (January 29, 2016)
+### v1.3.0 (February 7, 2016)
+- Fix Backbone require on collections
 
+### v1.2.0 (January 29, 2016)
 - Auto copy dependecies fron bower.json file
 
 ### v1.1.10 (January 12, 2016)

@@ -1,5 +1,5 @@
 'use strict';
-define(function(require) {
+define(['backbone'], function(Backbone) {
 	var DataCollection = Backbone.Collection.extend({
 		url: 'data/data.json',
 		initialize: function() {},
