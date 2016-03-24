@@ -7,7 +7,6 @@
 [![Installs](https://img.shields.io/npm/dt/generator-base-backbone.svg)](https://coveralls.io/r/zguillez/generator-base-backbone)
 ![](https://reposs.herokuapp.com/?path=zguillez/generator-base-backbone)
 [![License](http://img.shields.io/:license-mit-blue.svg)](http://doge.mit-license.org)
-[![Analytics](https://ga-beacon.appspot.com/UA-1125217-30/zguillez/generator-base-backbone?pixel)](https://github.com/igrigorik/ga-beacon)
 [![Join the chat at https://gitter.im/zguillez/generator-base-backbone](https://badges.gitter.im/zguillez/generator-base-backbone.svg)](https://gitter.im/zguillez/generator-base-backbone?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 > [Zguillez](https://zguillez.io) | Guillermo de la Iglesia
@@ -215,6 +214,6 @@ Features:
 * JSHint code chech
 * Grunt tasks
 
-
+[![Analytics](https://ga-beacon.appspot.com/UA-1125217-30/zguillez/generator-base-backbone?pixel)](https://github.com/igrigorik/ga-beacon)
 
 
