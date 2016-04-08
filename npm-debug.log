@@ -1,0 +1,131 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'publish' ]
+2 info using npm@3.3.12
+3 info using node@v5.1.0
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/Volumes/Data/Repositorios/yeoman/generator-base-backbone',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /Users/zguillez/.npm/generator-base-backbone/1.3.3/package.tgz not in flight; packing
+9 info lifecycle generator-base-backbone@1.3.3~prepublish: generator-base-backbone@1.3.3
+10 silly lifecycle generator-base-backbone@1.3.3~prepublish: no script for prepublish, continuing
+11 verbose tar pack [ '/Users/zguillez/.npm/generator-base-backbone/1.3.3/package.tgz',
+11 verbose tar pack   '/Volumes/Data/Repositorios/yeoman/generator-base-backbone' ]
+12 verbose tarball /Users/zguillez/.npm/generator-base-backbone/1.3.3/package.tgz
+13 verbose folder /Volumes/Data/Repositorios/yeoman/generator-base-backbone
+14 verbose addLocalTarball adding from inside cache /Users/zguillez/.npm/generator-base-backbone/1.3.3/package.tgz
+15 silly cache afterAdd generator-base-backbone@1.3.3
+16 verbose afterAdd /Users/zguillez/.npm/generator-base-backbone/1.3.3/package/package.json not in flight; writing
+17 verbose afterAdd /Users/zguillez/.npm/generator-base-backbone/1.3.3/package/package.json written
+18 silly publish { name: 'generator-base-backbone',
+18 silly publish   version: '1.3.3',
+18 silly publish   description: 'Backbone.js basic skeleton for webapp development. With RequireJS, Bootstrap, Sass, and templating with Jade and Lodash. Also with JSHint and Grunt.',
+18 silly publish   license: 'MIT',
+18 silly publish   main: 'app/index.js',
+18 silly publish   repository:
+18 silly publish    { type: 'git',
+18 silly publish      url: 'git+https://github.com/zguillez/generator-base-backbone.git' },
+18 silly publish   author:
+18 silly publish    { name: 'Guillermo de la Iglesia',
+18 silly publish      email: 'mail@zguillez.io',
+18 silly publish      url: 'https://github.com/zguillez' },
+18 silly publish   scripts: { test: 'mocha' },
+18 silly publish   files: [ 'generators' ],
+18 silly publish   keywords:
+18 silly publish    [ 'yeoman-generator',
+18 silly publish      'Backbone',
+18 silly publish      'Underscore',
+18 silly publish      'Lodash',
+18 silly publish      'Jade',
+18 silly publish      'Sass',
+18 silly publish      'Bootstrap',
+18 silly publish      'Jquery',
+18 silly publish      'Grunt' ],
+18 silly publish   dependencies:
+18 silly publish    { 'yeoman-generator': '^0.22.5',
+18 silly publish      chalk: '^1.1.1',
+18 silly publish      yosay: '^1.1.0' },
+18 silly publish   devDependencies:
+18 silly publish    { mocha: '*',
+18 silly publish      bower: '^1.7.7',
+18 silly publish      grunt: '^0.4.5',
+18 silly publish      'load-grunt-tasks': '^3.4.1',
+18 silly publish      'grunt-contrib-clean': '~1.0.0',
+18 silly publish      'grunt-contrib-concat': '^1.0.0',
+18 silly publish      'grunt-contrib-connect': '~1.0.1',
+18 silly publish      'connect-livereload': '^0.5.4',
+18 silly publish      'grunt-contrib-copy': '~1.0.0',
+18 silly publish      'grunt-contrib-jade': '^1.0.0',
+18 silly publish      'grunt-contrib-jshint': '^1.0.0',
+18 silly publish      'grunt-contrib-sass': '~1.0.0',
+18 silly publish      'grunt-contrib-uglify': '~1.0.1',
+18 silly publish      'grunt-contrib-watch': '^1.0.0',
+18 silly publish      'grunt-merge-copy': '^1.0.0',
+18 silly publish      'grunt-open': '^0.2.3',
+18 silly publish      'grunt-reload': '^0.2.0',
+18 silly publish      jade: '^1.11.0',
+18 silly publish      'jshint-stylish': '^2.1.0' },
+18 silly publish   readme: '# generator-base-backbone\n\n[![npm version](https://badge.fury.io/js/generator-base-backbone.svg)](https://badge.fury.io/js/generator-base-backbone)\n[![Build Status](http://img.shields.io/travis/zguillez/generator-base-backbone.svg)](https://travis-ci.org/zguillez/generator-base-backbone)\n[![Code Climate](http://img.shields.io/codeclimate/github/zguillez/generator-base-backbone.svg)](https://codeclimate.com/github/zguillez/generator-base-backbone)\n[![Dependency Status](https://gemnasium.com/zguillez/generator-base-backbone.svg)](https://gemnasium.com/zguillez/generator-base-backbone)\n[![Installs](https://img.shields.io/npm/dt/generator-base-backbone.svg)](https://coveralls.io/r/zguillez/generator-base-backbone)\n![](https://reposs.herokuapp.com/?path=zguillez/generator-base-backbone)\n[![License](http://img.shields.io/:license-mit-blue.svg)](http://doge.mit-license.org)\n[![Join the chat at https://gitter.im/zguillez/generator-base-backbone](https://badges.gitter.im/zguillez/generator-base-backbone.svg)](https://gitter.im/zguillez/generator-base-backbone?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)\n\n> [Zguillez](https://zguillez.io) | Guillermo de la Iglesia\n\n### Yeoman generator for Backbone.js webapp development. With RequireJS, Bootstrap, Sass, and templating with Jade and Lodash\n\n![](http://zguillez.github.io/img/backbone.png)\n\n# Getting Started\n\n### Install Yeoman\n\n\tnpm install -g yo\n\n### Yeoman Generators\n\nTo install generator-base-backbone from npm, run:\n\n\tnpm install -g generator-base-backbone\n\t\n\t//or:\n\tsudo npm install -g generator-base-backbone\n\nFinally, initiate the generator:\n\n\tyo base-backbone\n\nIf you have error on install try to update dependences manually:\n\n```bash\nsudo npm update\n```\n```bash\nbower update\n```\n\n## Requeriments\n\n### [NodeJS](https://nodejs.org/)\n\nFor update npm\n\n\tsudo npm install npm -g\n\n### [Bower](http://bower.io/)\n\n\tnpm install -g bower\n\n### [Sass](http://sass-lang.com/)\n\n\tsudo gem install sass\n\t\n**Documentation:**\n\n* [https://nodejs.org/](https://nodejs.org/)\n* [http://bower.io/](http://bower.io/)\n* [http://sass-lang.com/](http://sass-lang.com/)\n\n# Usage\n\nDevelop code on folder **/src**\n\n\t/src\n\t\t/data\n\t\t/images\n\t\t/scripts\n\t\t\t/collections\n\t\t\t/views\n\t\t/styles\n\t\t/templates\n\t\t\n### Compile code\n\nUse grunt task to compile code and deploy webapp\n\n\tgrunt serve\n\t\nTHis will launch server on port 9000\n\n\thttp://localhost:9000/\n\t\nDistribute code is compileded on forder **/dist**\n\n\t/dist\n\t\t/css\n\t\t/data\n\t\t/images\n\t\t/js\n\t\t/lib\n\t\t/templates\n\t\t\n### Styling\n\nSass files (\\*.sass, \\*.scss) must be located on **/src/styles** folder root.\n\n* Grunt task **sass.js** will process the files into CSS files to folder **/src/styles/css**.\n* Grunt task **copy.js** will copy all CSS files into **/src/styles/css** to folder **/dist/css** for ditribution.\n* You can also create and edit CSS files in **/src/styles/css**.\n\n### Templating\n\nThe NodeJS template engine JADE is implemented. Jade files (\\*.jade) must be located on **/templates** folder root.\n\n* Grunt task **jade.js** will process the files into HTML files to folder **/templates/html**.\n* Grunt task **copy.js** will copy all CSS files into **/templates/html** to folder **/dist/templates** for ditribution.\n* You can also create and edit HTML templates files in **/templates/html**.\n\n\nYou can use combined Jade and Lodash for templating:\n\n\t//templates/index.jade\n\t\n\theader#header\n\tsection(class=\'content\')\n\theader\n\t\timg(class=\'logo\', src=\'images/backbone.png\')\n\t.buttons.row\n\t\t<% _.forEach(libs, function(lib) { %>\n\t\t<%=  \'<a href="\' + lib.url + \'" target="_black" data-bypass="data-bypass" class="btn btn-default btn-sm">\' + lib.name + \'</a>\'  %>\n\t\t<% }); %>\n\tfooter#footer\n\t\n**Documentation:**\n\n* [http://jade-lang.com/](http://jade-lang.com/)\n* [https://lodash.com/](https://lodash.com/)\n\n# Dependencies\n\nGrunt task **copy.js** will read all bower.js files from **/bower_components** subfolders, and copy the file path from **main** node, like:\n\n\t//bower_components/requirejs/bower.json\n\t{\n\t  ...\n\t  "main": "require.js",\n\t  ...\n\t} \n\nAnd put this files into folder **/dist/lib/**.\n\nIf any installed dependency has no bower.json file (like lodash) you must edit the **copy.js** task to manually copy it:\n\n\tgrunt.config.set(\'copy\', {\n\t\t...\n\t\tlodash_: {\n\t\t\tcwd: \'bower_components/lodash/dist\',\n\t\t\tsrc: \'lodash.js\',\n\t\t\tdest: \'dist/lib/\',\n\t\t\texpand: true\n\t\t},\n\t\t...\n\t});\n\nIf an unnecesaary file is copied (like boostrap.less):\n\n\t//bower_components/bootstrap/bower.json\n\t{\n\t  ...\n\t  "main": [\n    \t"less/bootstrap.less",\n    \t"dist/js/bootstrap.js"\n\t  ],\n\t  ...\n\t} \n\t\nyou can delete it with the **clean-dist.js** task:\n\n\t//grunt/clean-dist.js\n\tgrunt.registerTask(\'clean-dist\', \'Clean dist folder\', function() {\n\t\t...\n\t\tgrunt.config.set(\'clean.files.src\', [\'dist/lib/bootstrap.less\']);\n\t\t...\n\t});\n\n# Contributing and issues\n\nContributors are welcome, please fork and send pull requests! If you have any ideas on how to make this project better then please submit an issue or send me an [email](mailto:mail@zguillez.io).\n\n# License\n\n©2016 Zguillez.io\n\nOriginal code licensed under [MIT](https://en.wikipedia.org/wiki/MIT_License) Open Source projects used within this project retain their original licenses.\n\n# Changelog\n### v1.3.0 (February 7, 2016)\n- Fix Backbone require on collections\n\n### v1.2.0 (January 29, 2016)\n- Auto copy dependecies fron bower.json file\n\n### v1.1.10 (January 12, 2016)\n- Fix yo install version\n\n### v1.0.0 (October 20, 2015) \nInitial Backbone.js skeleton\n\nFeatures:\n\n* Bootstrap\n* Jquery\n* Sass\n* Lodash\n* Jade templating\n* JSHint code chech\n* Grunt tasks\n\n[![Analytics](https://ga-beacon.appspot.com/UA-1125217-30/zguillez/generator-base-backbone?pixel)](https://github.com/igrigorik/ga-beacon)\n\n\n',
+18 silly publish   readmeFilename: 'README.md',
+18 silly publish   gitHead: '3c87cc670d750a60f7f1a7338db7b999be536b40',
+18 silly publish   bugs: { url: 'https://github.com/zguillez/generator-base-backbone/issues' },
+18 silly publish   homepage: 'https://github.com/zguillez/generator-base-backbone#readme',
+18 silly publish   _id: 'generator-base-backbone@1.3.3',
+18 silly publish   _shasum: '058f950e88f8b19c278ffd01486ac753d7750c81',
+18 silly publish   _from: '.' }
+19 verbose getPublishConfig undefined
+20 silly mapToRegistry name generator-base-backbone
+21 silly mapToRegistry using default registry
+22 silly mapToRegistry registry https://registry.npmjs.org/
+23 silly mapToRegistry uri https://registry.npmjs.org/generator-base-backbone
+24 verbose publish registryBase https://registry.npmjs.org/
+25 silly publish uploading /Users/zguillez/.npm/generator-base-backbone/1.3.3/package.tgz
+26 verbose request uri https://registry.npmjs.org/generator-base-backbone
+27 verbose request sending authorization for write operation
+28 info attempt registry request try #1 at 16:39:07
+29 verbose request using bearer token for auth
+30 verbose request id db59ae8626d4eb15
+31 http request PUT https://registry.npmjs.org/generator-base-backbone
+32 http 403 https://registry.npmjs.org/generator-base-backbone
+33 verbose headers { 'content-type': 'application/json',
+33 verbose headers   'cache-control': 'max-age=300',
+33 verbose headers   'content-length': '95',
+33 verbose headers   'accept-ranges': 'bytes',
+33 verbose headers   date: 'Thu, 24 Mar 2016 15:39:10 GMT',
+33 verbose headers   via: '1.1 varnish',
+33 verbose headers   connection: 'keep-alive',
+33 verbose headers   'x-served-by': 'cache-lhr6331-LHR',
+33 verbose headers   'x-cache': 'MISS',
+33 verbose headers   'x-cache-hits': '0',
+33 verbose headers   'x-timer': 'S1458833947.941605,VS0,VE2525' }
+34 verbose request invalidating /Users/zguillez/.npm/registry.npmjs.org/generator-base-backbone on PUT
+35 error publish Failed PUT 403
+36 verbose stack Error: "You cannot publish over the previously published version 1.3.3." : generator-base-backbone
+36 verbose stack     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+36 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:252:14)
+36 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+36 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:198:22)
+36 verbose stack     at emitTwo (events.js:87:13)
+36 verbose stack     at Request.emit (events.js:172:7)
+36 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1082:10)
+36 verbose stack     at emitOne (events.js:82:20)
+36 verbose stack     at Request.emit (events.js:169:7)
+36 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1009:12)
+37 verbose statusCode 403
+38 verbose pkgid generator-base-backbone
+39 verbose cwd /Volumes/Data/Repositorios/yeoman/generator-base-backbone
+40 error Darwin 15.3.0
+41 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "publish"
+42 error node v5.1.0
+43 error npm  v3.3.12
+44 error code E403
+45 error "You cannot publish over the previously published version 1.3.3." : generator-base-backbone
+46 error If you need help, you may report this error at:
+46 error     <https://github.com/npm/npm/issues>
+47 verbose exit [ 1, true ]
