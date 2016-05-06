@@ -2,9 +2,7 @@
   "name": "generator-base-backbone",
   "version": "1.3.10",
   "description": "Backbone.js basic skeleton for webapp development. With RequireJS, Bootstrap, Sass, and templating with Jade and Lodash. Also with JSHint and Grunt.",
-  "license": "Apache-2.0",
-  "main": "generators/index.js",
-  "repository": "/generator-generator",
+  "homepage": "",
   "author": {
     "name": "Guillermo de la Iglesia",
     "email": "mail@zguillez.io",
@@ -13,6 +11,7 @@
   "files": [
     "generators"
   ],
+  "main": "generators/index.js",
   "keywords": [
     "yeoman-generator",
     "Backbone",
@@ -25,9 +24,9 @@
     "Grunt"
   ],
   "dependencies": {
-    "yeoman-generator": "^0.23.3",
-    "chalk": "^1.1.3",
-    "yosay": "^1.1.1"
+    "yeoman-generator": "^0.22.0",
+    "chalk": "^1.0.0",
+    "yosay": "^1.0.2"
   },
   "devDependencies": {
     "yeoman-test": "^1.0.0",
@@ -68,8 +67,10 @@
       "mocha": true
     }
   },
+  "repository": "/zguillez/generator-base-backbone",
   "scripts": {
     "prepublish": "gulp prepublish",
     "test": "gulp"
-  }
+  },
+  "license": "Apache-2.0"
 }
