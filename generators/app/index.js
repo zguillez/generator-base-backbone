@@ -5,16 +5,9 @@ var yosay = require('yosay');
 module.exports = yeoman.Base.extend({
 	initializing: function() {
 		this.pkg = require('../../package.json');
-	},
-	prompting: function() {
-		var done = this.async();
 		this.log(yosay('Welcome to the zetadelic ' + chalk.red('BaseBackbone v' + this.pkg.version) + ' generator!'));
-		var prompts = [];
-		return this.prompt(prompts).then(function(props) {
-			this.props = props;
-		}.bind(this));
 	},
-	writing: {
+	writing: function() {
 		this.fs.copy(this.templatePath('editorconfig'), this.destinationPath('.editorconfig'));
 		this.fs.copy(this.templatePath('jshintrc'), this.destinationPath('.jshintrc'));
 		this.fs.copy(this.templatePath('bowerrc'), this.destinationPath('.bowerrc'));
