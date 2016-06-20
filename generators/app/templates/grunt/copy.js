@@ -48,6 +48,12 @@ module.exports = function(grunt) {
 			src: 'bootstrap.min.css',
 			dest: 'dist/lib/',
 			expand: true
+		},
+		bootstrap_native: {
+			cwd: 'bower_components/bootstrap.native/dist',
+			src: 'bootstrap-native.js',
+			dest: 'dist/lib/',
+			expand: true
 		}
 	});
 	var json, json2, lib, key, path;

@@ -192,6 +192,14 @@ Contributors are welcome, please fork and send pull requests! If you have any id
 Original code licensed under [MIT](https://en.wikipedia.org/wiki/MIT_License) Open Source projects used within this project retain their original licenses.
 
 # Changelog
+### v1.5.0 (June 20, 2016)
+- Update dependencies
+- Uses Bootstrap Native
+- Uses Jquery 3
+
+### v1.4.0 (May 9, 2016)
+- Update dependencies
+
 ### v1.3.0 (February 7, 2016)
 - Fix Backbone require on collections
 
