@@ -3,11 +3,11 @@ var yeoman = require('yeoman-generator');
 var chalk = require('chalk');
 var yosay = require('yosay');
 module.exports = yeoman.Base.extend({
-	initializing: function() {
+	initializing: function () {
 		this.pkg = require('../../package.json');
 		this.log(yosay('Welcome to the zetadelic ' + chalk.red('BaseBackbone v' + this.pkg.version) + ' generator!'));
 	},
-	writing: function() {
+	writing: function () {
 		this.fs.copy(this.templatePath('editorconfig'), this.destinationPath('.editorconfig'));
 		this.fs.copy(this.templatePath('jshintrc'), this.destinationPath('.jshintrc'));
 		this.fs.copy(this.templatePath('bowerrc'), this.destinationPath('.bowerrc'));
@@ -17,7 +17,7 @@ module.exports = yeoman.Base.extend({
 		this.fs.copy(this.templatePath('grunt'), this.destinationPath('grunt'));
 		this.fs.copy(this.templatePath('src'), this.destinationPath('src'));
 	},
-	install: function() {
+	install: function () {
 		this.installDependencies();
 	}
 });
