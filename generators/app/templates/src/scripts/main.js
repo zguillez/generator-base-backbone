@@ -6,7 +6,7 @@ require.config({
 		jquery: '../lib/jquery',
 		underscore: '../lib/lodash',
 		backbone: '../lib/backbone',
-		bootstrap: '../lib/bootstrap-native'
+		bootstrap: '../lib/bootstrap'
 	}
 });
 require(['backbone', 'jquery', 'underscore'], function() {

@@ -1,6 +1,6 @@
 'use strict';
 module.exports = function(grunt) {
-	grunt.config.set('sass', {
+	grunt.config.set('less', {
 		dev: {
 			options: {
 				style: 'nested'
@@ -8,7 +8,7 @@ module.exports = function(grunt) {
 			files: [{
 				cwd: 'src/styles/',
 				dest: 'src/styles/css/',
-				src: ['*.scss', '*.sass'],
+				src: ['*.less', '*.css'],
 				ext: '.css',
 				expand: true
 			}]

@@ -11,11 +11,11 @@
 	"name": "Bootstrap",
 	"url": "http://getbootstrap.com/"
 }, {
-	"name": "Sass",
-	"url": "http://sass-lang.com/"
+	"name": "LESS",
+	"url": "http://lesscss.org/"
 }, {
-	"name": "Jade",
-	"url": "http://jade-lang.com/"
+	"name": "Pug",
+	"url": "https://pugjs.org/"
 }, {
 	"name": "Grunt",
 	"url": "http://gruntjs.com/"
