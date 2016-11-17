@@ -11,6 +11,7 @@ module.exports = yeoman.Base.extend({
 		this.fs.copy(this.templatePath('editorconfig'), this.destinationPath('.editorconfig'));
 		this.fs.copy(this.templatePath('jshintrc'), this.destinationPath('.jshintrc'));
 		this.fs.copy(this.templatePath('bowerrc'), this.destinationPath('.bowerrc'));
+		this.fs.copy(this.templatePath('gitignore'), this.destinationPath('.gitignore'));
 		this.fs.copy(this.templatePath('package.json'), this.destinationPath('package.json'));
 		this.fs.copy(this.templatePath('bower.json'), this.destinationPath('bower.json'));
 		this.fs.copy(this.templatePath('Gruntfile.js'), this.destinationPath('Gruntfile.js'));

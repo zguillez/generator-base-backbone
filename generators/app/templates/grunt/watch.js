@@ -16,14 +16,14 @@ module.exports = function(grunt) {
 			}
 		},
 		css: {
-			files: ['src/styles/*.scss', 'src/styles/*.sass', 'src/styles/*.css'],
+			files: ['src/styles/*.less', 'src/styles/*.css'],
 			tasks: ['rebuild', 'reload'],
 			options: {
 				livereload: true,
 			}
 		},
 		templates: {
-			files: ['src/templates/*.jade', 'src/templates/html/*.html'],
+			files: ['src/templates/*.pug', 'src/templates/html/*.html'],
 			tasks: ['rebuild', 'reload']
 		}
 	});
