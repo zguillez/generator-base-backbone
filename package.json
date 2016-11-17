@@ -2,7 +2,7 @@
 	"name": "generator-base-backbone",
 	"version": "1.5.8",
 	"description": "Backbone.js basic skeleton for webapp development. With RequireJS, Bootstrap, Sass, and templating with Jade and Lodash. Also with JSHint and Grunt.",
-	"homepage": "",
+	"homepage": "https://github.com/zguillez/generator-base-backbone",
 	"author": {
 		"name": "Guillermo de la Iglesia",
 		"email": "mail@zguillez.io",
