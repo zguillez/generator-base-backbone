@@ -115,9 +115,9 @@ The NodeJS template engine JADE is implemented. Jade files (\*.jade) must be loc
 * You can also create and edit HTML templates files in **/templates/html**.
 
 
-You can use combined Jade and Lodash for templating:
+You can use combined Pug and Lodash for templating:
 
-	//templates/index.jade
+	//templates/index.pug
 	
 	header#header
 	section(class='content')
@@ -131,7 +131,7 @@ You can use combined Jade and Lodash for templating:
 	
 **Documentation:**
 
-* [http://jade-lang.com/](http://jade-lang.com/)
+* [https://pugjs.org/](https://pugjs.org/)
 * [https://lodash.com/](https://lodash.com/)
 
 # Dependencies
