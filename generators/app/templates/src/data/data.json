@@ -14,8 +14,8 @@
 	"name": "Sass",
 	"url": "http://sass-lang.com/"
 }, {
-	"name": "Jade",
-	"url": "http://jade-lang.com/"
+	"name": "Pug",
+	"url": "https://pugjs.org/"
 }, {
 	"name": "Grunt",
 	"url": "http://gruntjs.com/"
