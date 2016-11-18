@@ -110,7 +110,7 @@ Sass files (\*.sass, \*.scss) must be located on **/src/styles** folder root.
 
 The NodeJS template engine JADE is implemented. Jade files (\*.jade) must be located on **/templates** folder root.
 
-* Grunt task **jade.js** will process the files into HTML files to folder **/templates/html**.
+* Grunt task **pug.js** will process the files into HTML files to folder **/templates/html**.
 * Grunt task **copy.js** will copy all CSS files into **/templates/html** to folder **/dist/templates** for ditribution.
 * You can also create and edit HTML templates files in **/templates/html**.
 
@@ -192,6 +192,10 @@ Contributors are welcome, please fork and send pull requests! If you have any id
 Original code licensed under [MIT](https://en.wikipedia.org/wiki/MIT_License) Open Source projects used within this project retain their original licenses.
 
 # Changelog
+### v1.6.0 (November 19, 2016)
+- Removes Bootstrap Native
+- Update Jade to Pug
+
 ### v1.5.0 (June 20, 2016)
 - Update dependencies
 - Uses Bootstrap Native
