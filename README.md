@@ -11,7 +11,7 @@
 
 > [Zguillez](https://zguillez.io) | Guillermo de la Iglesia
 
-### Yeoman generator for Backbone.js webapp development. With RequireJS, Bootstrap, Sass, and templating with Jade and Lodash
+### Yeoman generator for Backbone.js webapp development. With RequireJS, Bootstrap, Sass, and templating with Pug and Lodash
 
 ![](http://zguillez.github.io/img/backbone.png)
 
@@ -108,7 +108,7 @@ Sass files (\*.sass, \*.scss) must be located on **/src/styles** folder root.
 
 ### Templating
 
-The NodeJS template engine JADE is implemented. Jade files (\*.jade) must be located on **/templates** folder root.
+The NodeJS template engine PUG is implemented. Pug files (\*.pug) must be located on **/templates** folder root.
 
 * Grunt task **pug.js** will process the files into HTML files to folder **/templates/html**.
 * Grunt task **copy.js** will copy all CSS files into **/templates/html** to folder **/dist/templates** for ditribution.
