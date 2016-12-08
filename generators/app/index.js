@@ -3,6 +3,8 @@ var yeoman = require('yeoman-generator');
 var chalk = require('chalk');
 var yosay = require('yosay');
 var fs = require('fs');
+var replace = require('replace');
+
 module.exports = yeoman.Base.extend({
 
   initializing: function () {
@@ -34,18 +36,31 @@ module.exports = yeoman.Base.extend({
     this.fs.copy(this.templatePath('jshintrc'), this.destinationPath('.jshintrc'));
     this.fs.copy(this.templatePath('bowerrc'), this.destinationPath('.bowerrc'));
 
-    // Files that differs depending on css choice
-    this.fs.copy(this.templatePath('bower_bsv'+this.props.bootstrap+'.json'), this.destinationPath('bower.json'));
+    // Files that differs depending on user choices
+    this.fs.copyTpl(this.templatePath('bower.json'), this.destinationPath('bower.json'),{
+      pkgver:( this.props.bootstrap == '3' ? "3.3.7" : "4.0.0"),
+    });
 
+    this.fs.copyTpl(this.templatePath('package.json'), this.destinationPath('package.json'),{
+      css:( this.props.css == 'LESS' ? "grunt-contrib-less" : "grunt-contrib-sass"),
+      pkgver:( this.props.css == 'LESS' ? "~1.4.0" : "^1.0.0"),
+    });
 
-    // Files that differs depending on css choice
-    this.fs.copy(this.templatePath('package_'+this.props.css+'.json'), this.destinationPath('package.json'));
-    this.fs.copyTpl(this.templatePath('Gruntfile.js'), this.destinationPath('Gruntfile.js'),{css:this.props.css.toLowerCase()});
+    this.fs.copyTpl(this.templatePath('Gruntfile.js'), this.destinationPath('Gruntfile.js'),{
+      css:this.props.css.toLowerCase()
+    });
 
     this.fs.copy(this.templatePath('grunt'), this.destinationPath('grunt'));
-    this.fs.unlink
-
     this.fs.copy(this.templatePath('src'), this.destinationPath('src'));
+    this.fs.delete(this.destinationPath('styles/main.'+( this.props.css == 'LESS' ? "sass" : "less")));
+    this.fs.delete(this.destinationPath('grunt/'+( this.props.css == 'LESS' ? "sass" : "less") + '.js'));
+    // this.fs.extendJSON(this.destinationPath('src/data/data.json'), [[{
+    //   "name": "Bootstrap",
+    //   "url": "http://getbootstrap.com/"
+    // }, {
+    //   "name": "LESS",
+    //   "url": "http://lesscss.org/"
+    // }]]);
   }
   ,
   install: function () {
