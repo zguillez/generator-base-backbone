@@ -1,7 +1,7 @@
 {
   "name": "generator-base-backbone",
-  "version": "1.6.0",
-  "description": "Backbone.js basic skeleton for webapp development. With RequireJS, Bootstrap, Sass, and templating with Pug and Lodash. Also with JSHint and Grunt.",
+  "version": "1.5.0",
+  "description": "Backbone.js basic skeleton for webapp development. With RequireJS, Bootstrap, Sass, and templating with Jade and Lodash. Also with JSHint and Grunt.",
   "license": "MIT",
   "main": "app/index.js",
   "repository": "zguillez/generator-base-backbone",
@@ -20,3 +20,4 @@
   },
   "devDependencies": {}
 }
+

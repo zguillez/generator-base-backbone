@@ -1,0 +1,34 @@
+{
+  "name": "generator-base-backbone",
+  "version": "1.6.0",
+  "description": "Backbone.js basic skeleton for webapp development. With RequireJS, Bootstrap, Sass, and templating with Pug and Lodash. Also with JSHint and Grunt.",
+  "license": "MIT",
+  "main": "app/index.js",
+  "repository": "zguillez/gnerator-base-backbone",
+  "author": {
+    "name": "Guillermo de la Iglesia",
+    "email": "mail@zguillez.io",
+    "url": "https://github.com/zguillez"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "bower": "^1.8.0",
+    "connect-livereload": "^0.6.0",
+    "grunt": "^1.0.1",
+    "grunt-contrib-clean": "~1.0.0",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-connect": "~1.0.2",
+    "grunt-contrib-copy": "~1.0.0",
+    "grunt-contrib-jshint": "^1.0.0",
+    "grunt-contrib-pug": "^1.0.0",
+    "grunt-contrib-less": "~1.0.0",
+    "grunt-contrib-uglify": "~2.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-merge-copy": "^1.0.1",
+    "grunt-open": "^0.2.3",
+    "grunt-reload": "^0.2.0",
+    "jshint-stylish": "^2.2.1",
+    "load-grunt-tasks": "^3.5.2",
+    "pug": "^2.0.0-beta6"
+  }
+}

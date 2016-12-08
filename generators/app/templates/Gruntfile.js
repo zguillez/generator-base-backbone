@@ -1,4 +1,5 @@
 'use strict';
+
 module.exports = function(grunt) {
 	grunt.initConfig({});
 	require('load-grunt-tasks')(grunt);
@@ -7,7 +8,7 @@ module.exports = function(grunt) {
 	require('./grunt/pug')(grunt);
 	require('./grunt/copy')(grunt);
 	require('./grunt/merge')(grunt);
-	require('./grunt/less')(grunt);
+	require('./grunt/<%= css %>')(grunt);
 	require('./grunt/uglify')(grunt);
 	require('./grunt/connect')(grunt);
 	require('./grunt/open')(grunt);
@@ -16,12 +17,13 @@ module.exports = function(grunt) {
 	require('./grunt/clean-dist')(grunt);
 	grunt.registerTask('default', ['serve']);
 	grunt.registerTask('serve', function() {
-		grunt.task.run(['clean:dist', 'jshint', 'uglify', 'pug', 'less', 'copy', 'clean-dist', 'connect', 'open', 'watch']);
+		grunt.task.run(['clean:dist', 'jshint', 'uglify', 'pug', '<%= css %>', 'copy', 'clean-dist', 'connect', 'open', 'watch']);
 	});
 	grunt.registerTask('build', function() {
-		grunt.task.run(['clean:dist', 'jshint', 'uglify', 'pug', 'less', 'copy', 'clean-dist']);
+		grunt.task.run(['clean:dist', 'jshint', 'uglify', 'pug', '<%= css %>', 'copy', 'clean-dist']);
 	});
 	grunt.registerTask('rebuild', function() {
-		grunt.task.run(['clean:dist', 'uglify', 'pug', 'less', 'copy', 'clean-dist']);
+		grunt.task.run(['clean:dist', 'uglify', 'pug', '<%= css %>', 'copy', 'clean-dist']);
 	});
 };
+

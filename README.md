@@ -10,8 +10,9 @@
 [![Join the chat at https://gitter.im/zguillez/generator-base-backbone](https://badges.gitter.im/zguillez/generator-base-backbone.svg)](https://gitter.im/zguillez/generator-base-backbone?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 > [Zguillez](https://zguillez.io) | Guillermo de la Iglesia
+> [Icosa-hk](https://github.com/icosa-hk) | Icosahedron
 
-### Yeoman generator for Backbone.js webapp development. With RequireJS, Bootstrap, Sass, and templating with Jade and Lodash
+### Yeoman generator for Backbone.js webapp development. With RequireJS, Bootstrap, Sass, and templating with Pug and Lodash
 
 ![](http://zguillez.github.io/img/backbone.png)
 
@@ -108,16 +109,16 @@ Sass files (\*.sass, \*.scss) must be located on **/src/styles** folder root.
 
 ### Templating
 
-The NodeJS template engine JADE is implemented. Jade files (\*.jade) must be located on **/templates** folder root.
+The NodeJS template engine PUG is implemented. Pug files (\*.pug) must be located on **/templates** folder root.
 
-* Grunt task **jade.js** will process the files into HTML files to folder **/templates/html**.
+* Grunt task **pug.js** will process the files into HTML files to folder **/templates/html**.
 * Grunt task **copy.js** will copy all CSS files into **/templates/html** to folder **/dist/templates** for ditribution.
 * You can also create and edit HTML templates files in **/templates/html**.
 
 
-You can use combined Jade and Lodash for templating:
+You can use combined Pug and Lodash for templating:
 
-	//templates/index.jade
+	//templates/index.pug
 	
 	header#header
 	section(class='content')
@@ -131,7 +132,7 @@ You can use combined Jade and Lodash for templating:
 	
 **Documentation:**
 
-* [http://jade-lang.com/](http://jade-lang.com/)
+* [https://pugjs.org/](https://pugjs.org/)
 * [https://lodash.com/](https://lodash.com/)
 
 # Dependencies
@@ -192,6 +193,10 @@ Contributors are welcome, please fork and send pull requests! If you have any id
 Original code licensed under [MIT](https://en.wikipedia.org/wiki/MIT_License) Open Source projects used within this project retain their original licenses.
 
 # Changelog
+### v1.6.0 (November 19, 2016)
+- Removes Bootstrap Native
+- Update Jade to Pug
+
 ### v1.5.0 (June 20, 2016)
 - Update dependencies
 - Uses Bootstrap Native
