@@ -6,29 +6,6 @@ var fs = require('fs');
 var replace = require('replace');
 
 
-// var _ = require('underscore'),
-//     fs = require('fs'),
-//     data = JSON.parse(fs.readFileSync('./data.json', 'utf-8')).data;
-
-// _.each(data, function(item) {
-
-//   var newJson = item[0],
-//       files = item[1];
-
-//   _.each(files, function(file) {
-//     var path = '.' + file,
-//         oldJson = JSON.parse(fs.readFileSync(path, 'utf-8')),
-//         newJson = _.extend(oldJson, newJson),
-//         printableJson = JSON.stringify(newJson, null, 2);
-
-//     fs.writeFile(path, printableJson, function(err) {
-//       if (err) throw('File save error: '+ err);
-//       console.log('file saved');
-//     });
-
-//   });
-
-// });
 module.exports = yeoman.Base.extend({
 
   initializing: function () {
