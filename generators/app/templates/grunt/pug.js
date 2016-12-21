@@ -1,6 +1,6 @@
 'use strict';
 module.exports = function(grunt) {
-	grunt.config.set('jade', {
+	grunt.config.set('pug', {
 		compile: {
 			options: {
 				client: false,
@@ -8,7 +8,7 @@ module.exports = function(grunt) {
 			},
 			files: [{
 				cwd: "src/templates/",
-				src: "*.jade",
+				src: "*.pug",
 				dest: "src/templates/html/",
 				expand: true,
 				ext: ".html"
