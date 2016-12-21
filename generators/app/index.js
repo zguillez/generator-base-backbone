@@ -3,58 +3,79 @@ var yeoman = require('yeoman-generator');
 var chalk = require('chalk');
 var yosay = require('yosay');
 var fs = require('fs');
+var replace = require('replace');
+
+
 module.exports = yeoman.Base.extend({
+
   initializing: function () {
     this.pkg = require('../../package.json');
     this.log(yosay('Welcome to the zetadelic ' + chalk.red('BaseBackbone v' + this.pkg.version) + ' generator!'));
   },
 
-  /*prompting: function () {
-   return this.prompt([{
-   type: 'list',
-   name: 'css',
-   message: 'Would you like use Sass or Less?',
-   choices: ['Sass', 'Less']
-   }, {
-   type: 'list',
-   name: 'bootstrap',
-   message: 'Which version of Bootstrap?',
-   choices: ['3', '4']
+  prompting: function () {
+    var prompts = [{
+      type: 'list',
+      name: 'css',
+      message: 'Would you like use Sass or Less?',
+      choices: ['SASS', 'LESS']
+    }, {
+      type: 'list',
+      name: 'bootstrap',
+      message: 'Which version of Bootstrap do you prefer?',
+      choices: ['3', '4']
+    }];
 
-   }]).then(function (answers) {
-   this.jquery = answers.jquery;
-   this.css = answers.css;
-   this.bootstrap = answers.bootstrap;
-   }.bind(this));
-   },*/
+    return this.prompt(prompts).then(function (props) {
+      // To access props later use this.props.<name>;
+      this.props = props;
+    }.bind(this));
+  },
 
   writing: function () {
     this.fs.copy(this.templatePath('editorconfig'), this.destinationPath('.editorconfig'));
     this.fs.copy(this.templatePath('jshintrc'), this.destinationPath('.jshintrc'));
     this.fs.copy(this.templatePath('bowerrc'), this.destinationPath('.bowerrc'));
-    this.fs.copy(this.templatePath('package.json'), this.destinationPath('package.json'));
-    this.fs.copy(this.templatePath('bower.json'), this.destinationPath('bower.json'));
-    this.fs.copy(this.templatePath('Gruntfile.js'), this.destinationPath('Gruntfile.js'));
+
+    // Files that differs depending on user choices
+    this.fs.copyTpl(this.templatePath('bower.json'), this.destinationPath('bower.json'),{
+      pkgver:( this.props.bootstrap == '3' ? "3.3.7" : "4.0.0"),
+    });
+
+    this.fs.copyTpl(this.templatePath('package.json'), this.destinationPath('package.json'),{
+      css:( this.props.css == 'LESS' ? "grunt-contrib-less" : "grunt-contrib-sass"),
+      pkgver:( this.props.css == 'LESS' ? "~1.4.0" : "^1.0.0"),
+    });
+
+    this.fs.copyTpl(this.templatePath('Gruntfile.js'), this.destinationPath('Gruntfile.js'),{
+      css:this.props.css.toLowerCase()
+    });
+
+    // icosa:
+    // src files are using a syntax that contains a keyword collision with copyTpl, namely this <%= =>
+    //  - copy duplicated files and then delete the unwanted one,
+    //  - read and rewrite the target file
+    // are workarounds that i came up with to make things work for the meantime
     this.fs.copy(this.templatePath('grunt'), this.destinationPath('grunt'));
     this.fs.copy(this.templatePath('src'), this.destinationPath('src'));
+    this.fs.delete(this.destinationPath('styles/main.'+( this.props.css == 'LESS' ? "sass" : "less")));
+    this.fs.delete(this.destinationPath('grunt/'+( this.props.css == 'LESS' ? "sass" : "less") + '.js'));
+
+    var libData = this.fs.readJSON(this.destinationPath('src/data/data.json'));
+    var i = 0;
+    for (i; i<libData.length; i++){
+      if(this.props.bootstrap == '4' && libData[i].name == 'Bootstrap'){
+        libData[i].name = 'Bootstrap v4';
+        libData[i].url = 'https://v4-alpha.getbootstrap.com/';
+      }else if(this.props.css == 'LESS' && libData[i].name ==  'Sass'){
+        libData[i].name = 'Less';
+        libData[i].url = 'http://lesscss.org/';
+      }
+    }
+    this.fs.writeJSON(this.destinationPath('src/data/data.json'), libData);
   }
   ,
   install: function () {
-
-    /*if (this.bootstrap == 4) {
-     fs.readFile(this.destinationPath('bower.json'), 'utf8', function (err, data) {
-     if (err) {
-     return console.log(err);
-     }
-     var result = data.replace(/~3.3.7/g, '4.0.0-alpha.5');
-     fs.writeFile(this.destinationPath('bower.json'), result, 'utf8', function (err) {
-     if (err) {
-     return console.log(err)
-     }
-     });
-     }.bind(this));
-     }*/
-
     this.installDependencies();
   }
 });
