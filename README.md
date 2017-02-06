@@ -1,5 +1,7 @@
 # generator-base-backbone
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/zguillez/generator-base-backbone.svg)](https://greenkeeper.io/)
+
 [![npm version](https://badge.fury.io/js/generator-base-backbone.svg)](https://badge.fury.io/js/generator-base-backbone)
 [![Build Status](http://img.shields.io/travis/zguillez/generator-base-backbone.svg)](https://travis-ci.org/zguillez/generator-base-backbone)
 [![Code Climate](http://img.shields.io/codeclimate/github/zguillez/generator-base-backbone.svg)](https://codeclimate.com/github/zguillez/generator-base-backbone)
