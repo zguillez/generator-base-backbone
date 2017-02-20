@@ -58,8 +58,10 @@ module.exports = yeoman.Base.extend({
     // are workarounds that i came up with to make things work for the meantime
     this.fs.copy(this.templatePath('grunt'), this.destinationPath('grunt'));
     this.fs.copy(this.templatePath('src'), this.destinationPath('src'));
-    this.fs.delete(this.destinationPath('styles/main.'+( this.props.css == 'LESS' ? "sass" : "less")));
+    this.fs.delete(this.destinationPath('src/styles/main.'+( this.props.css == 'LESS' ? "sass" : "less")));
     this.fs.delete(this.destinationPath('grunt/'+( this.props.css == 'LESS' ? "sass" : "less") + '.js'));
+    this.fs.move(this.destinationPath('grunt/watch'+( this.props.css == 'LESS' ? "less" : "sass") + '.js'), this.destinationPath('grunt/watch.js'));
+    this.fs.delete(this.destinationPath('grunt/watch'+( this.props.css == 'LESS' ? "sass" : "less") + '.js'));
 
     var libData = this.fs.readJSON(this.destinationPath('src/data/data.json'));
     var i = 0;
