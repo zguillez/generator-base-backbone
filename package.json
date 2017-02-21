@@ -45,7 +45,7 @@
     "grunt-contrib-less": "^1.4.0",
     "grunt-contrib-pug": "^1.0.0",
     "grunt-contrib-sass": "~1.0.0",
-    "grunt-contrib-uglify": "~2.0.0",
+    "grunt-contrib-uglify": "~2.1.0",
     "grunt-contrib-watch": "^1.0.0",
     "grunt-merge-copy": "^1.0.1",
     "grunt-open": "^0.2.3",
