@@ -6,6 +6,7 @@ section(class='content')
         img(class='logo', src='images/backbone.png')
 
     .buttons.row
+      .col-12
         <% _.forEach(libs, function(lib) { %>
         <%=  '<a href="' + lib.url + '" target="_black" data-bypass="data-bypass" class="btn btn-primary btn-sm">' + lib.name + '</a>'  %>
         <% }); %>

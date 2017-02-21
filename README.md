@@ -12,6 +12,7 @@
 [![Join the chat at https://gitter.im/zguillez/generator-base-backbone](https://badges.gitter.im/zguillez/generator-base-backbone.svg)](https://gitter.im/zguillez/generator-base-backbone?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 > [Zguillez](https://zguillez.io) | Guillermo de la Iglesia
+
 > [Icosa-hk](https://github.com/icosa-hk) | Icosahedron
 
 ### Yeoman generator for Backbone.js webapp development. With RequireJS, Bootstrap, Sass, and templating with Pug and Lodash
@@ -24,7 +25,8 @@
 
 	npm install -g yo
 
-### Yeoman Generators
+### Yeoman Gen
+erators
 
 To install generator-base-backbone from npm, run:
 
