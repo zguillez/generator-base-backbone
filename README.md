@@ -1,7 +1,5 @@
 # generator-base-backbone
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/zguillez/generator-base-backbone.svg)](https://greenkeeper.io/)
-
 [![npm version](https://badge.fury.io/js/generator-base-backbone.svg)](https://badge.fury.io/js/generator-base-backbone)
 [![Build Status](http://img.shields.io/travis/zguillez/generator-base-backbone.svg)](https://travis-ci.org/zguillez/generator-base-backbone)
 [![Code Climate](http://img.shields.io/codeclimate/github/zguillez/generator-base-backbone.svg)](https://codeclimate.com/github/zguillez/generator-base-backbone)
@@ -10,6 +8,7 @@
 ![](https://reposs.herokuapp.com/?path=zguillez/generator-base-backbone)
 [![License](http://img.shields.io/:license-mit-blue.svg)](http://doge.mit-license.org)
 [![Join the chat at https://gitter.im/zguillez/generator-base-backbone](https://badges.gitter.im/zguillez/generator-base-backbone.svg)](https://gitter.im/zguillez/generator-base-backbone?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Greenkeeper badge](https://badges.greenkeeper.io/zguillez/generator-base-backbone.svg)](https://greenkeeper.io/)
 
 > [Zguillez](https://zguillez.io) | Guillermo de la Iglesia
 
