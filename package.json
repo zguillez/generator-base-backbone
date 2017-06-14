@@ -52,7 +52,7 @@
     "grunt-reload": "^0.2.0",
     "gulp": "^3.9.1",
     "gulp-coveralls": "^0.1.4",
-    "gulp-eslint": "^3.0.1",
+    "gulp-eslint": "^4.0.0",
     "gulp-exclude-gitignore": "^1.1.1",
     "gulp-istanbul": "^1.1.1",
     "gulp-line-ending-corrector": "^1.0.1",
