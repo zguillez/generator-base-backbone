@@ -60,7 +60,7 @@
     "gulp-nsp": "^2.4.2",
     "gulp-plumber": "^1.1.0",
     "jshint-stylish": "^2.2.1",
-    "load-grunt-tasks": "^3.5.2",
+    "load-grunt-tasks": "^4.0.0",
     "pug": "^2.0.0-beta6",
     "replace": "^0.3.0",
     "yeoman-assert": "^3.0.0",
